@@ -2,33 +2,52 @@
 <PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto">
 
-    <PreferenceCategory android:title="@string/security_center_app_title">
+    <PreferenceCategory>
 
-        <DropDownPreference
-            android:key="prefs_key_security_center_app_default_sort"
-            android:title="@string/security_app_sort_title"
-            android:summary="@string/security_app_sort_summary"
-            android:defaultValue="0"
-            app:entries="@array/app_sort"
-            app:entryValues="@array/app_sort_value" />
+        <Preference
+            android:title="@string/lbe"
+            android:key="prefs_key_lbe"
+            android:icon="@drawable/ic_lbe">
+            <intent
+                android:targetPackage="com.sevtinge.cemiuiler"
+                android:targetClass="com.sevtinge.cemiuiler.ui.securitycenter.LbeActivity"/>
+        </Preference>
 
-        <SwitchPreference
-            android:key="prefs_key_security_center_app_restrict"
-            android:title="@string/security_restrict_app_title"
-            android:summary="@string/security_restrict_app_summary"
-            android:defaultValue="false" />
+        <Preference
+            android:title="@string/powerkeeper"
+            android:key="prefs_key_powerkeeper"
+            android:icon="@drawable/ic_powerkeeper">
+            <intent
+                android:targetPackage="com.sevtinge.cemiuiler"
+                android:targetClass="com.sevtinge.cemiuiler.ui.securitycenter.PowerKeeperActivity"/>
+        </Preference>
 
-        <SwitchPreference
-            android:key="prefs_key_security_center_app_disable"
-            android:summary="@string/security_disable_app_summary"
-            android:title="@string/security_disable_app_title"
-            android:defaultValue="false" />
+        <Preference
+            android:title="@string/guard_provider"
+            android:key="prefs_key_guardprovider"
+            android:icon="@drawable/ic_guard_provider_new">
+            <intent
+                android:targetPackage="com.sevtinge.cemiuiler"
+                android:targetClass="com.sevtinge.cemiuiler.ui.securitycenter.GuardProviderActivity"/>
+        </Preference>
 
-        <SwitchPreference
-            android:key="prefs_key_security_center_app_details"
-            android:title="@string/security_app_title"
-            android:summary="@string/security_app_summary"
-            android:defaultValue="false" />
+        <Preference
+            android:title="@string/security_center_app_title"
+            android:key="prefs_key_app_manage"
+            android:icon="@drawable/ic_guard_provider_new">
+            <intent
+                android:targetPackage="com.sevtinge.cemiuiler"
+                android:targetClass="com.sevtinge.cemiuiler.ui.securitycenter.AppManageActivity"/>
+        </Preference>
+
+        <Preference
+            android:title="@string/security_center_privacy_title"
+            android:key="prefs_key_privacy_protection"
+            android:icon="@drawable/ic_guard_provider_new">
+            <intent
+                android:targetPackage="com.sevtinge.cemiuiler"
+                android:targetClass="com.sevtinge.cemiuiler.ui.securitycenter.PrivacyProtectionActivity"/>
+        </Preference>
 
     </PreferenceCategory>
 
@@ -39,31 +58,6 @@
             android:title="@string/security_center_show_battery_temperature"
             android:defaultValue="false"
             app:isPreferenceVisible="true"/>
-
-    </PreferenceCategory>
-
-    <PreferenceCategory android:title="@string/security_center_privacy_title">
-
-        <SwitchPreference
-                android:key="prefs_key_security_center_ai_clipboard"
-                android:title="@string/security_center_ai_clipboard"
-                android:defaultValue="false" />
-
-        <SwitchPreference
-            android:key="prefs_key_security_center_blur_location"
-            android:title="@string/security_center_blur_location"
-            android:defaultValue="false" />
-
-        <SwitchPreference
-                android:key="prefs_key_security_center_get_number"
-                android:title="@string/security_center_get_number"
-                android:defaultValue="false" />
-
-        <SwitchPreference
-            android:key="prefs_key_security_center_applock_pin_scramble"
-            android:title="@string/security_center_applock_pin_scramble"
-            android:summary="@string/security_center_applock_pin_scramble_desc"
-            android:defaultValue="false" />
 
     </PreferenceCategory>
 

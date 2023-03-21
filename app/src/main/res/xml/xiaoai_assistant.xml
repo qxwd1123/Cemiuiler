@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+    <Preference
+        android:title="@string/aireco"
+        android:key="prefs_key_aireco"
+        android:icon="@drawable/ic_suggestion">
+        <intent
+            android:targetPackage="com.sevtinge.cemiuiler"
+            android:targetClass="com.sevtinge.cemiuiler.ui.xiaoai.AirecoActivity"/>
+    </Preference>
+
+    <Preference
+        android:title="@string/scanner"
+        android:key="prefs_key_scanner"
+        android:icon="@drawable/ic_scanner">
+        <intent
+            android:targetPackage="com.sevtinge.cemiuiler"
+            android:targetClass="com.sevtinge.cemiuiler.ui.xiaoai.ScannerActivity"/>
+    </Preference>
+</PreferenceScreen>

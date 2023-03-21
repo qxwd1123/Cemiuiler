@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <PreferenceCategory>
+
+        <DropDownPreference
+            android:key="prefs_key_security_center_app_default_sort"
+            android:title="@string/security_app_sort_title"
+            android:summary="@string/security_app_sort_summary"
+            android:defaultValue="0"
+            app:entries="@array/app_sort"
+            app:entryValues="@array/app_sort_value" />
+
+        <SwitchPreference
+            android:key="prefs_key_security_center_app_restrict"
+            android:title="@string/security_restrict_app_title"
+            android:summary="@string/security_restrict_app_summary"
+            android:defaultValue="false" />
+
+        <SwitchPreference
+            android:key="prefs_key_security_center_app_disable"
+            android:summary="@string/security_disable_app_summary"
+            android:title="@string/security_disable_app_title"
+            android:defaultValue="false" />
+
+        <SwitchPreference
+            android:key="prefs_key_security_center_app_details"
+            android:title="@string/security_app_title"
+            android:summary="@string/security_app_summary"
+            android:defaultValue="false" />
+
+    </PreferenceCategory>
+
+</PreferenceScreen>

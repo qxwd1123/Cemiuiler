@@ -1,4 +1,4 @@
-package com.sevtinge.cemiuiler.ui;
+package com.sevtinge.cemiuiler.ui.securitycenter;
 
 import androidx.fragment.app.Fragment;
 import com.sevtinge.cemiuiler.R;
@@ -9,7 +9,7 @@ public class PowerKeeperActivity  extends BaseAppCompatActivity {
 
         @Override
         public Fragment initFragment() {
-            return new com.sevtinge.cemiuiler.ui.PowerKeeperActivity.PowerKeeperFragment();
+            return new PowerKeeperActivity.PowerKeeperFragment();
         }
 
         public static class PowerKeeperFragment extends SubFragment {

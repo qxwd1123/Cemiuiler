@@ -1,28 +1,27 @@
-package com.sevtinge.cemiuiler.ui;
+package com.sevtinge.cemiuiler.ui.xiaoai;
 
 import androidx.fragment.app.Fragment;
 import com.sevtinge.cemiuiler.R;
 import com.sevtinge.cemiuiler.ui.base.BaseAppCompatActivity;
 import com.sevtinge.cemiuiler.ui.base.SubFragment;
 
-public class BrowserActivity extends BaseAppCompatActivity {
+public class AirecoActivity extends BaseAppCompatActivity {
+
 
     @Override
     public Fragment initFragment() {
-        return new com.sevtinge.cemiuiler.ui.BrowserActivity.BrowserFragment();
+        return new AirecoFragment();
     }
 
-    public static class BrowserFragment extends SubFragment {
+
+    public static class AirecoFragment extends SubFragment {
 
         @Override
         public int getContentResId() {
-            return R.xml.browser;
+            return R.xml.aireco;
         }
     }
-
 }
-
-
 
 
 

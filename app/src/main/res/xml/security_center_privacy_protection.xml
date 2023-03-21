@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <PreferenceCategory>
+
+        <SwitchPreference
+            android:key="prefs_key_security_center_ai_clipboard"
+            android:title="@string/security_center_ai_clipboard"
+            android:defaultValue="false" />
+
+        <SwitchPreference
+            android:key="prefs_key_security_center_blur_location"
+            android:title="@string/security_center_blur_location"
+            android:defaultValue="false" />
+
+        <SwitchPreference
+            android:key="prefs_key_security_center_get_number"
+            android:title="@string/security_center_get_number"
+            android:defaultValue="false" />
+
+        <SwitchPreference
+            android:key="prefs_key_security_center_applock_pin_scramble"
+            android:title="@string/security_center_applock_pin_scramble"
+            android:summary="@string/security_center_applock_pin_scramble_desc"
+            android:defaultValue="false" />
+
+    </PreferenceCategory>
+</PreferenceScreen>
