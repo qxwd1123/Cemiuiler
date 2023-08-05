@@ -328,7 +328,7 @@ public class DisplayHardwareDetail extends BaseHook {
                                         }
                                         if (powerNow != null)
                                             voltVal = Integer.parseInt(powerNow) / 1000f / 1000f;
-                                        String simpleWatt = String.format(Locale.getDefault(), "%.2f", Math.abs(voltVal * rawCurr) / 1000);
+                                        String simpleWatt = String.format(Locale.getDefault(), "%.2f", voltVal * rawCurr / 1000);
                                         String splitChar = mPrefsMap.getBoolean("system_ui_statusbar_battery_line_show")
                                             ? " " : "\n";
                                         batteryInfo = simpleWatt + powerUnit + splitChar + currVal + currUnit;
@@ -345,7 +345,7 @@ public class DisplayHardwareDetail extends BaseHook {
                                         }
                                         if (powerNow != null)
                                             voltVal = Integer.parseInt(powerNow) / 1000f / 1000f;
-                                        String simpleWatt = String.format(Locale.getDefault(), "%.2f", Math.abs(voltVal * rawCurr) / 1000);
+                                        String simpleWatt = String.format(Locale.getDefault(), "%.2f", voltVal * rawCurr / 1000);
                                         batteryInfo = simpleWatt + powerUnit;
                                     } else {
                                         batteryInfo = currVal + currUnit;
